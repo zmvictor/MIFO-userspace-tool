@@ -1,0 +1,8 @@
+--- sample command ---
+
+ip route add 100.0.0.0/24 deflect nexthop via x.x.x.x nexthop via y.y.y.y nexthop via z.z.z.z
+
+--- explaination ---
+
+1. The order of "deflect" argument is important. It must in front of nexthop.
+2. x.x.x.x will be seen as default path, while y.y.y.y and z.z.z.z are seen as alternative paths.
